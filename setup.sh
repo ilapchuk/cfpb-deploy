@@ -36,7 +36,7 @@ setup_hmda() {
 
 	docker run -v `pwd`:/io -w /io sbt-build clean assembly
 
-	sed -i '/ui:/{n;n;n;n;n;n;n;N;d;}' docker-compose.yml
+	sed -i '/ui:/{n;n;n;n;n;n;n;n;N;d;}' docker-compose.yml
 
 	docker-compose up
 }
@@ -53,7 +53,7 @@ setup_grasshopper() {
 
 	cd ~/grasshopper/grasshopper && docker run -v `pwd`:/io -w /io sbt-build clean assembly
 
-	sed -i '/ui:/{n;n;n;n;n;N;d;}' docker-compose.yml
+	sed -i '/ui:/{n;n;n;n;n;n;N;d;}' docker-compose.yml
 
 	docker-compose up
 }

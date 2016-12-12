@@ -47,7 +47,7 @@ setup_boot2docker() {
 	return 0	
 }
 
-install_boot2docker
+#install_boot2docker
 setup_boot2docker
 
 exit 0
