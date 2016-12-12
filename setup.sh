@@ -59,9 +59,9 @@ setup_grasshopper() {
 }
 
 if [[ "$module" = $HMDA_MODULE ]]; then
-        exit 0
+	setup_hmda
 elif [[ "$module" = $GRASSHOPPER_MODULE ]]; then
-	setup_grasshopper;	
+	setup_grasshopper
 else 
 	echo "Usage: setup.sh [hmda|grasshopper]"
 	exit 1	
